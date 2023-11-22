@@ -1,6 +1,8 @@
-package org.example;
+package org.example.employee;
 
-public class Developer extends Employee{
+import org.example.employee.Employee;
+
+public class Developer extends Employee {
     String programmingLanguage;
 
     public Developer(String name, String programmingLanguage){

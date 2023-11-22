@@ -1,4 +1,6 @@
-package org.example;
+package org.example.employee;
+
+import org.example.Website;
 
 public class CloudDeveloper extends Developer {
 

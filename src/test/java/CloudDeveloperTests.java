@@ -1,8 +1,6 @@
-import org.example.CloudDeveloper;
+import org.example.employee.CloudDeveloper;
 import org.example.Website;
 import org.junit.jupiter.api.Test;
-
-import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

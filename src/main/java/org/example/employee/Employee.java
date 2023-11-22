@@ -1,8 +1,6 @@
-package org.example;
+package org.example.employee;
 
-import javax.xml.namespace.QName;
-
-public class Employee extends Person{
+public class Employee extends Person {
 
     public  Employee(String name){
         setName(name);
