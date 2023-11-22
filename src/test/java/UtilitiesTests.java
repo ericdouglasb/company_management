@@ -1,4 +1,3 @@
-import org.example.Level;
 import org.example.Utilities;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -62,7 +61,7 @@ public class UtilitiesTests {
     @ParameterizedTest
     @ValueSource(ints = {5, 15, 25, 30, -1})
     public void testGetNoiseLevelLow(int decibel){
-        var expected = Level.LOW;
+        var expected = Utilities.Level.LOW;
         var actual = Utilities.getNoiseLevel(decibel);
 
         assertEquals(expected, actual);
@@ -71,7 +70,7 @@ public class UtilitiesTests {
     @ParameterizedTest
     @ValueSource(ints = {45, 55, 38, 67})
     public void testGetNoiseLevelMedium(int decibel){
-        var expected = Level.MEDIUM;
+        var expected = Utilities.Level.MEDIUM;
         var actual = Utilities.getNoiseLevel(decibel);
 
         assertEquals(expected, actual);
@@ -80,7 +79,7 @@ public class UtilitiesTests {
     @ParameterizedTest
     @ValueSource(ints = {70, 85, 95, 100})
     public void testGetNoiseLevelHigh(int decibel){
-        var expected = Level.HIGH;
+        var expected = Utilities.Level.HIGH;
         var actual = Utilities.getNoiseLevel(decibel);
 
         assertEquals(expected, actual);

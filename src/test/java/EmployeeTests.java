@@ -1,12 +1,20 @@
 import org.example.employee.Employee;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class EmployeeTests {
 
+    Employee employee;
+
+    @BeforeEach
+    public void init() {
+        employee = new Employee("Eric");
+    }
     @Test
+
     public void testConstructorSetName(){
-        var employee = new Employee("Eric");
+
 
         var expected = "Eric";
         var actual = employee.getName();
@@ -16,7 +24,6 @@ public class EmployeeTests {
 
     @Test
     public void testGetSound(){
-        var employee = new Employee("Eric");
 
         var expected = "Aaow!";
         var actual = employee.getSound();
@@ -27,8 +34,6 @@ public class EmployeeTests {
 
     @Test
     void testEatFood() {
-
-        var employee = new Employee("Eric");
 
         var expected = "nom nom nom";
         var actual = employee.eatFood();

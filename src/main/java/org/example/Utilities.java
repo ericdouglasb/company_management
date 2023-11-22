@@ -28,6 +28,11 @@ public class Utilities {
         }
 
 
-    }
+    public enum Level{
+         LOW,
+         MEDIUM,
+         HIGH,
+     }
+}
 
 
